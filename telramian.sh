@@ -165,7 +165,7 @@ sudo apt install g++-arm-linux-gnueabihf
 echo_process "Installing python3-dev"
 sudo apt install python3-dev python3-pip -y
 
-echo_process "Installing python-numpy python-scipy"
+echo_process "Installing python3-numpy python3-scipy"
 sudo apt install python-numpy python-scipy -y
 
 echo_process "Update pip and clear cache"
