@@ -169,11 +169,11 @@ echo_process "Installing python3-numpy python3-scipy"
 sudo apt install python3-numpy python3-scipy -y
 
 echo_process "Update pip and clear cache"
-python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade pip --break-system-packages
 sudo rm -rf ~/.cache/pip
 
 echo_process "Install testresources picamera[array] wget numpy scipy pandas"
-sudo python3 -m pip install testresources picamera[array] wget numpy scipy pandas
+sudo python3 -m pip install testresources picamera[array] wget numpy scipy pandas --break-system-packages
 
 echo_process "Increase SWAP space to compile without hanging due to memory exhausting and on all 4 cores"
 sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
