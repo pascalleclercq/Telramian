@@ -166,7 +166,7 @@ echo_process "Installing python3-dev"
 sudo apt install python3-dev python3-pip -y
 
 echo_process "Installing python3-numpy python3-scipy"
-sudo apt install python-numpy python-scipy -y
+sudo apt install python3-numpy python3-scipy -y
 
 echo_process "Update pip and clear cache"
 python3 -m pip install --upgrade pip
